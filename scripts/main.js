@@ -41,6 +41,11 @@ const setWeather = (data) => {
   warning.textContent = ''
 }
 
+const enterCheck = (e) => {
+	if (e.key === 'Enter') {
+		currentWeather()
+	}
+}
 
 
 button.addEventListener('click', currentWeather)
