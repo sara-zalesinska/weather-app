@@ -24,7 +24,6 @@ async function currentWeather () {
 	
 	try{
 		const res = await axios.get(getWeather)
-		console.log(res);
 		setWeather(res.data)
 	} catch (error) {
 		warning.textContent = 'Something went wrong...'
