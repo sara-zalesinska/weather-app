@@ -1,5 +1,7 @@
 # Weather App
 
+Live version: https://get-current-weather-app.netlify.app/
+
 This application provides users with up-to-date weather information based on the city they specify. The app utilizes the WeatherAPI.com service to fetch weather data via a JSON RESTful API.
 
 ## Features
@@ -29,4 +31,3 @@ The Weather App integrates with the WeatherAPI.com service to retrieve weather d
 - EsLint
 - Prettier
 - Vite
-
