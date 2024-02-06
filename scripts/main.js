@@ -1,6 +1,6 @@
 import '../styles/style.scss';
 
-const input = document.querySelector('input');
+const input = document.querySelector('.input');
 const button = document.querySelector('button');
 const cityName = document.querySelector('.city-name');
 const warning = document.querySelector('.warning');
