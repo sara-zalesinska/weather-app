@@ -14,7 +14,7 @@ const API_KEY = '0fff874edc6f41f78c8170213233001';
 
 const API_FULL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
 
-async function currentWeather() {
+async function getCurrentWeather() {
   const city = input.value;
   const getWeather = `${API_FULL}&q=${city}`;
 
@@ -37,9 +37,9 @@ const setWeather = (data) => {
 
 const enterCheck = (e) => {
   if (e.key === 'Enter') {
-    currentWeather();
+    getCurrentWeather();
   }
 };
 
-button.addEventListener('click', currentWeather);
+button.addEventListener('click', getCurrentWeather);
 input.addEventListener('keyup', enterCheck);
