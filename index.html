@@ -7,38 +7,38 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="wrapper">
-			<div class="top">
-				<h1>weather app</h1>
-				<div class="main-info">
-					<div>
-						<h3 class="city-name"></h3>
-						<input type="text" placeholder="Wpisz nazwę miasta..." /><button>
-							Wyślij
-						</button>
-						<p class="warning"></p>
-					</div>
-					<img
-						src="./images/unknown.png"
-						alt="Obrazek przedstawiający pogodę"
-						class="photo"
-					/>
-				</div>
-			</div>
-			<div class="bottom">
-				<div class="headings">
-					<p>Weather:</p>
-					<p>Temperature:</p>
-					<p>Humidity:</p>
-				</div>
-				<div class="weather-info">
-					<p class="weather"></p>
-					<p class="temperature"></p>
-					<p class="humidity"></p>
-				</div>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <div class="app">
+      <div class="wrapper">
+        <div class="top">
+          <h1 class="app-name">weather app</h1>
+          <div class="main-info">
+            <div class="city-info">
+              <h3 class="city-name"></h3>
+              <input class="input" type="text" placeholder="Type in a city name..." />
+              <button class="send-btn">Send</button>
+              <p class="warning"></p>
+            </div>
+            <img src="./images/unknown.png" alt="A pic showing the weather" class="photo" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="weather-category heading-one">
+            <p>Weather:</p>
+            <p class="weather"></p>
+          </div>
+          <div class="weather-category heading-two">
+            <p>Temperature:</p>
+            <p class="temperature"></p>
+          </div>
+          <div class="weather-category heading-three">
+            <p>Humidity:</p>
+            <p class="humidity"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
